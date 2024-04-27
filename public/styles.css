@@ -1,0 +1,108 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4ef40c, #3a8f3e );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+.title{
+    margin: 10px 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+    color:#3a8f3e 
+}
+
+.button-group button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 15px 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.button-group .active {
+    background-color: #3a8f3e ;
+    color: white;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    width: calc(100% - 20px);
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: 0.3px solid #3a8f3e ;
+}
+
+button[type="submit"] {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a8f3e ;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #00300a;
+}
+
+.switch-form {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.switch-form a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #3a8f3e;
+    font-weight: bold;
+    }
+    
+    /* Adding hover effect to buttons */
+    .button-group button:hover:not(.active),
+    .switch-form a:hover {
+    color: #3a8f3e;;
+}
+
+.form-content {
+    display: none; /* Hidden by default */
+}
+
+.form-content.active {
+    display: block; /* Show active form */
+}
